@@ -56,8 +56,8 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if(shuffledQuestions.length > currentQuestionIndex + 1 ) {
-    nextButton.classList.remove('hide')
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide')
     } else {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
@@ -133,9 +133,9 @@ const questions = [
     {
         question: "Why does Jaron need so many transactions?",
         answers: [
-            { text: "We dont know", correct: false },
-            { text: "The limit does not exist", correct: false },
-            { text: "He wants to ruin the waiver wire", correct: false },
+            { text: "We dont know", correct: true },
+            { text: "The limit does not exist", correct: true },
+            { text: "He wants to ruin the waiver wire", correct: true },
             { text: "He is just confused", correct: true }
         ]
         // choice1: "We dont know",
@@ -145,7 +145,7 @@ const questions = [
         // corret: "He is just confused"
     },
     {
-        question: "Who was the first running back taken in our 2015 draft?",
+        question: "Who was the first running back taken in our 2015 draft?(we had keepers)",
         answers: [
             { text: "Adrian Peterson", correct: false },
             { text: "Matt Forte", correct: false },
@@ -158,4 +158,22 @@ const questions = [
         // choice4: "DeMarco Murray",
         // corret: "Shady McCoy"
     },
+    {
+        question: "Who had the most points against them per game this year",
+        answers: [
+            { text: "Ej", correct: false },
+            { text: "Matt", correct: false },
+            { text: "Webby", correct: true },
+            { text: "Vernon", correct: false }
+        ]
+    },
+    {
+        question: "Who was the first overall pick in our first draft in 2013",
+        answers: [
+            { text: "Marshawn Lynch", correct: false },
+            { text: "Calvin Johnson", correct: false },
+            { text: "Arian Foster", correct: false },
+            { text: "Adrian Peterson", correct: true }
+        ]
+    }
 ]
