@@ -12,8 +12,9 @@
 
 .h1 {
     display: flex;
-    justify-content:baseline;
-    align-items:baseline
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
